@@ -11,6 +11,7 @@ body { max-width: 1600px }
 /* ==== BODY ==== */
 body { background-color: #f1efe9 }
 
+
 /* ==== PAGE WRAPPER  ==== */
 .page-wrapper { margin-bottom: 10% }
 
@@ -25,7 +26,7 @@ body { background-color: #f1efe9 }
 
 /* Mobiles */
 @media all and (max-width:767px) {
-	 .page-wrapper { 
+  .page-wrapper { 
 		width: 80%; 
 		margin-left: auto;
 		margin-right: auto
@@ -33,7 +34,13 @@ body { background-color: #f1efe9 }
 }
 
 /* ==== MAIN HEADING  ==== */
-h1 { font-family: 'Montserrat', sans-serif; font-weight: normal; letter-spacing: -1px; text-align: center }
+
+h1 { 
+	font-family: serif;
+	font-weight: normal;
+	text-align: center;
+	letter-spacing: -1px
+}
 
 /* Desktop */
 @media all and (min-width: 768px) {
@@ -45,10 +52,10 @@ h1 { font-family: 'Montserrat', sans-serif; font-weight: normal; letter-spacing:
 		margin-bottom: 5%;
 		margin-left: 5%;
 		margin-right: 5%
-	}
+  }
 }
 
-/* Mobiles */
+ /* Mobiles */
 @media all and (max-width:767px) {
 	h1 { 
 		font-size: 36px;
@@ -61,13 +68,14 @@ h1 { font-family: 'Montserrat', sans-serif; font-weight: normal; letter-spacing:
 	}
 }
 
-
 /* ==== SUB HEADINGS ==== */
 
 h2, 
 h3, 
-h4 { font-family: 'Montserrat', sans-serif; font-weight: bold; line-height: 1.2 }
+h4 { font-family: sans-serif; font-weight: bold; line-height: 1.2 }
+ 
 h2 { letter-spacing: 1px; text-transform: uppercase }
+
 
 /* Desktop */
 @media all and (min-width:768px) {
@@ -83,33 +91,41 @@ h2 { letter-spacing: 1px; text-transform: uppercase }
 	h4 { font-size: 15px; margin-top: 1% }
 }
 
+ /* ==== PARAGRAPH TEXT ==== */
 
-/* ==== PARAGRAPH ==== */
-p { font-family: 'Lato', sans-serif; }
-
+p { font-family: sans-serif }
 
 /* Desktop */
 @media all and (min-width:768px) {
-	p {font-size: 18px; line-height: 1.6; margin-bottom: 1.5% }
+	p { font-size: 18px; line-height: 1.6; margin-bottom: 2.5% }
 }
 
 /* Mobiles */
 @media all and (max-width:767px) {
-	p {font-size: 15px; line-height: 1.4; margin-bottom: 4% }
+	p { font-size: 15px; line-height: 1.4; margin-bottom: 5% }
 }
 
 
 /* ==== BULLETS ==== */
-li{font-family: 'Lato', sans-serif; margin-left: 17px; }
+
+li { font-family: sans-serif; margin-left: 17px }
 
 /* Desktop */
 @media all and (min-width:768px) {
-	li {font-size: 18px; line-height: 1.6; margin-bottom: 1.5%; }
+	ul { margin-bottom: 2.5% }
+	li { 
+		font-size: 18px; line-height: 1.7; 
+		margin-bottom: 1%
+	}
 }
 
-/* Mobiles */
-@media all and (max-width:767px) {
-	li {font-size: 15px; line-height: 1.4; margin-bottom: 5% }
+ /* Mobiles */
+ @media all and (max-width:767px) {
+	ul { margin-bottom: 5% }
+	li {
+		font-size: 15px; line-height: 1.4;
+		margin-bottom: 4%
+	}
 }
 
 
@@ -126,10 +142,12 @@ li{font-family: 'Lato', sans-serif; margin-left: 17px; }
 
 
 /* ==== DIV - INTRODUCTION ==== */
+
 .box-introduction { 
 	width: 90%;
-	border-bottom-style: solid;
+	border-bottom-style: solid; 
 	border-bottom-color: #dcd8cf;
+	width: 90%;
 }
 
 .box-introduction p { font-family: serif; font-style: italic; text-align: center }
@@ -144,13 +162,14 @@ li{font-family: 'Lato', sans-serif; margin-left: 17px; }
 
 	.box-introduction p { 
 		line-height: 1.4; 
-		font-size: 28px 
+		font-size: 28px; 
 	}
 }
 
 /* Mobiles */
 @media all and (max-width:767px) { 
 	.box-introduction { 
+		width: 90%;
 		margin: 2% auto 10% auto;
 		padding-bottom: 10px;
 		border-bottom-width: 6px
@@ -158,14 +177,18 @@ li{font-family: 'Lato', sans-serif; margin-left: 17px; }
 
 	.box-introduction p { 
 		line-height: 1.3; 
-		font-size: 20px 
+		font-size: 20px; 
 	}
 }
 
+
 /* ==== DIV - HIGHLIGHTED BLOCK ==== */
-.box-highlight { background-color: #d4c6e6; padding-top: 0; padding-bottom: 5%  }
-.box-highlight p:last-child { margin-bottom: 0; }
-.box-highlight ul li:last-child { margin-bottom: 0; }
+
+.box-highlight { background-color: #d4c6e6 }
+.box-highlight h4 { margin-top: 0 }
+.box-highlight p:last-child { margin-bottom: 0 }
+.box-highlight ul { margin-bottom: 0 }
+.box-highlight ul li:last-child { margin-bottom: 0 }
 
 /* Desktop */
 @media all and (min-width:768px) { 
@@ -175,6 +198,6 @@ li{font-family: 'Lato', sans-serif; margin-left: 17px; }
 
 /* Mobiles */
 @media all and (max-width:767px) { 
-	.box-highlight { margin-top: 2%; margin-bottom: 10% }
+	.box-highlight { margin-top:2%; margin-bottom: 10% }
 	.box-highlight { padding: 12px 14px }
 }
